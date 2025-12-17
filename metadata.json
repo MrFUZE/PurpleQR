@@ -1,0 +1,5 @@
+{
+  "name": "PurpleQR",
+  "description": "A sleek, dark-themed QR code generator with support for Wi-Fi, vCard, logos, and custom colors. All processing is done locally in your browser.",
+  "requestFramePermissions": []
+}
