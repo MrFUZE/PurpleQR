@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PurpleQR - Generator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              purple: {
+                DEFAULT: '#8A2BE2',
+                50: '#F3E5FD',
+                100: '#E7CCFB',
+                200: '#D099F7',
+                300: '#B866F4',
+                400: '#A133F0',
+                500: '#8A2BE2',
+                600: '#6E22B5',
+                700: '#531988',
+                800: '#37115A',
+                900: '#1C082D',
+              },
+              dark: {
+                bg: '#121212',
+                surface: '#1E1E1E',
+                border: '#333333'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <!-- EasyQRCodeJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/easyqrcodejs@4.5.0/dist/easy.qrcode.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-dark-bg text-gray-200 antialiased selection:bg-purple-500 selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
